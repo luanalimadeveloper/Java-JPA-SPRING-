@@ -1,0 +1,10 @@
+package este.basico;
+
+public class NovoUsuario {
+	
+	public static void main(String[] args) {
+		
+		EntityManager em 
+	}
+
+}

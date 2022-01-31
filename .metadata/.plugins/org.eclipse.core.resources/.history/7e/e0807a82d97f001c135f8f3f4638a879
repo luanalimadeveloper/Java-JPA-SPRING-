@@ -1,0 +1,15 @@
+package teste.basico;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+public class NovoUsuario {
+	
+	public static void main(String[] args) {
+		
+		EntityManagerFactory emf;
+		EntityManager em = emf.createEntityManager(); 
+		
+	}
+
+}
