@@ -1,0 +1,13 @@
+package infra;
+
+import modelo.basico.Produto;
+
+public class ProdutoDAO extends DAO<Produto>{
+	
+	public static void main(String[] args) {
+		
+		public ProdutoDAO() {
+			super()
+		}
+	}
+}

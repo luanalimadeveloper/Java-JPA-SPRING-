@@ -1,0 +1,12 @@
+package teste.basico;
+
+import modelo.basico.Produto;
+
+public class novoProduto {
+	
+	public static void main(String[] args) {
+		
+		DAO<Produto> dao = new DAO<>(Produto.class);
+	}
+
+}

@@ -1,0 +1,10 @@
+package teste.basico;
+
+public class novoProduto {
+	
+	public static void main(String[] args) {
+		
+		DAO<Produto> 
+	}
+
+}

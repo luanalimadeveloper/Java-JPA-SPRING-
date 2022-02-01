@@ -1,0 +1,20 @@
+package infra;
+
+import javax.persistence.EntityManagerFactory;
+
+public class DAO<E>{
+
+	private static EntityManagerFactory emf;
+	private EntityManagerFactory em; 
+	
+	
+	static {
+		
+	}
+	
+	public DAO() {
+		em = (EntityManagerFactory) emf.createEntityManager();
+	}
+	
+	
+}
