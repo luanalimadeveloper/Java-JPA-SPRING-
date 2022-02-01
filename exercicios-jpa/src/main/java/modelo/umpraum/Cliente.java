@@ -1,5 +1,6 @@
 package modelo.umpraum;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +19,8 @@ public class Cliente {
 	
 	private String nome;
 	
-	@OneToOne
+	//@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE}) /* operacao em cascat apara a insercao e operação */
+	@OneToOne(cascade = CascadeType.PERSIST) /*Operacao em Cascata apenas na persistencia*/
 	@JoinColumn(name = "assento_id", unique = true) /*Especifico para mapear campos que representam juncao*/
 	private Assento assento;
 	
