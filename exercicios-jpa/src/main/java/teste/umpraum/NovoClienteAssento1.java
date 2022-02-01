@@ -18,5 +18,6 @@ public class NovoClienteAssento1 {
 			.incluir(cliente)
 			.fecharT()
 			.fechar();
+		
 	}
 }
