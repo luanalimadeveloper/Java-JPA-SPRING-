@@ -1,0 +1,9 @@
+package modelo.umpramuitos;
+
+public class Pedido {
+	
+	private Long id;
+	
+	private Date data;
+	
+}
