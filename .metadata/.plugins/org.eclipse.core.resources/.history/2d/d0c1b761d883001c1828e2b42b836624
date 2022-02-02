@@ -1,0 +1,14 @@
+package teste.umpramuitos;
+
+import infra.DAO;
+import modelo.umpramuitos.Pedido;
+
+public class ObterPedido {
+	
+	DAO<Pedido> dao = new DAO<Pedido>(Pedido.class);
+	
+	Pedido pedido = dao.obterPorId(1L);
+	
+	for(ItemPedido item: pedido.getItens());
+
+}

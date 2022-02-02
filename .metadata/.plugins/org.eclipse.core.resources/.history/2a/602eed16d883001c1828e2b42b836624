@@ -1,0 +1,7 @@
+package teste.umpramuitos;
+
+public class ObterPedido {
+	
+	DAO<Pedido> dao = new DAO<Pedido>(Pedido.class);
+
+}
