@@ -1,0 +1,18 @@
+package teste.muitospramuitos;
+
+import modelo.muitospramuitos.Ator;
+import modelo.muitospramuitos.Filme;
+
+public class NovoFilmeAtor {
+	
+	public static void main(String[] args) {
+		
+		Filme filmeA = new Filme("Star Wars", 8.7);
+		
+		Ator atorA = new Ator("Harrison Ford");
+		Ator atrizB = new Ator("Carrie Fisher");
+		
+		
+	}
+
+}
