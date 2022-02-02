@@ -1,0 +1,9 @@
+package teste.muitospramuitos;
+
+public class NovoTioSobrinho {
+	
+	public static void main(String[] args) {
+		Tio tia1 = new Tio("Maria");
+	}
+
+}

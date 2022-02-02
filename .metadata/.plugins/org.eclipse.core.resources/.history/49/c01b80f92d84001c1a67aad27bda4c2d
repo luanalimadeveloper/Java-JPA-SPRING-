@@ -1,0 +1,9 @@
+package modelo.muitospramuitos;
+
+public class Sobrinho {
+	
+	private Long id;
+	
+	private String nome;
+
+}

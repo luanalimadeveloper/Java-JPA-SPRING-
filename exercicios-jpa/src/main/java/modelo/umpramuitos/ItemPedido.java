@@ -2,6 +2,7 @@ package modelo.umpramuitos;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,7 +22,7 @@ public class ItemPedido {
 	private Pedido pedido;
 	
 	/*Um produto pode estar relacionado muitos ItemPedido*/
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.EAGER) /*Eager: valor padrao quando é pra um (ToOne -> Eager)*/
 	private Produto produto;
 	
 	@Column(nullable = false) /*Nao aceita nulo*/ 
