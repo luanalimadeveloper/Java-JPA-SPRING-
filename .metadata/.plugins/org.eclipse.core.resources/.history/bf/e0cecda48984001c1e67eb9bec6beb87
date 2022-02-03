@@ -1,0 +1,10 @@
+package teste.consulta;
+
+public class ObterMediaFilmes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

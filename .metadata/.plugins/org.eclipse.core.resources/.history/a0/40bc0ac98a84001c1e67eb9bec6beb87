@@ -1,0 +1,11 @@
+package teste.consulta;
+
+public class ObterMediaFilmes {
+
+	public static void main(String[] args) {
+		
+		DAO<Filme> dao = new DAO<Filme>(Filme.class);
+
+	}
+
+}

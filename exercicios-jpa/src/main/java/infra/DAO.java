@@ -7,6 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
+import org.hibernate.query.criteria.internal.predicate.IsEmptyPredicate;
+
 public class DAO<E>{
 
 	private static EntityManagerFactory emf;
@@ -71,6 +73,22 @@ public class DAO<E>{
 		query.setMaxResults(qtde);
 		query.setFirstResult(deslocamento);
 		return query.getResultList();
+	}
+	
+	/* Object...  : Como se fosse um array */
+	public List<E> consultar(String moneConsulta, Object... params ){
+		TypedQuery<E> query = em.createNamedQuery(moneConsulta, classe);
+		
+		for (int i = 0; i < params.length; i+= 2) {
+			query.setParameter(params[i].toString(), params[i + 1]);
+		}
+		
+		return query.getResultList();
+	}
+	
+	public E consultarUm(String nomeConsulta, Object... params){
+		List<E> lista = consultar(nomeConsulta, params);
+		return lista.isEmpty() ? null : lista.get(0);
 	}
 	
 	public void fechar() {
