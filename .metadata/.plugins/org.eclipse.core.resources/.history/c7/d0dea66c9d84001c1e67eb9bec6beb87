@@ -1,0 +1,7 @@
+package modelo.composicao;
+
+@Entity
+@Table(name = "fornecedores")
+public class Fornecedor {
+
+}
