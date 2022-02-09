@@ -17,6 +17,7 @@ public class ProdutoController {
 	@Autowired /*INTERFACE que faz a PERSISTENCIA no banco de dados - Com essa anotação o spring fica responsavel por criar um objeto desse tipo ProductRepository*/
 	private ProductRepository produtoRepository;
 
+	/*
 	@PostMapping
 	public @ResponseBody Produto novoProduto(
 			@RequestParam String nome,
@@ -26,4 +27,13 @@ public class ProdutoController {
 		produtoRepository.save(produto);
 		return produto;
 	}
+	*/
+	
+	@PostMapping
+	public @ResponseBody Produto novoProduto(Produto produto) {
+		produtoRepository.save(produto);
+		return produto;
+	}
+	
+	
 }
