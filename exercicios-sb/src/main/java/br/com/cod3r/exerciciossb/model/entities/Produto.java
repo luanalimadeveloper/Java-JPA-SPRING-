@@ -15,7 +15,7 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@NotBlank /*Diferente de vazio*/
+	/*@NotBlank*/  /*Diferente de vazio*/
 	private String nome;
 	
 	@Min(0)
