@@ -1,7 +1,0 @@
-package modelo.umpraum;
-
-public class Cliente {
-	
-	private LOng id;
-
-}

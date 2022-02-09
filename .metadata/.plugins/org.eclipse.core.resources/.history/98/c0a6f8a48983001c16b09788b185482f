@@ -1,9 +1,0 @@
-package teste.umpraum;
-
-public class NovoClienteAssento2 {
-
-	public static void main(String[] args) {
-
-	}
-
-}

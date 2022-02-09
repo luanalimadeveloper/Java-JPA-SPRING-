@@ -1,8 +1,0 @@
-package teste.umpraum;
-
-public class NovoClienteAssento1 {
-	
-	public static void main(String[] args) {
-		Assento assento = new Assento("16C");
-	}
-}
