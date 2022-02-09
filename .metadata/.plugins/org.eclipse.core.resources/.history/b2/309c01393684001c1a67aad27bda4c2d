@@ -1,7 +1,0 @@
-package modelo.muitospramuitos;
-
-@Entity
-@Table(name = "atores")
-public class Ator {
-
-}
